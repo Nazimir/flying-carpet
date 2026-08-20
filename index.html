@@ -389,6 +389,7 @@ var LS_CSV  = "fc26.csv.";
 var params = new URLSearchParams(location.search);
 var csvOverride = params.get("csv");
 var nowOverride = params.get("now");
+var previewTomorrow = params.has("tomorrow");
 
 /* =====================================================================
    1. Tiny helpers
@@ -595,6 +596,7 @@ var STR = {
   next:       { en:"next",             tr:"sıradaki" },
   loading:    { en:"Loading the plan", tr:"Plan yükleniyor" },
   offline:    { en:"Offline – showing last version", tr:"Çevrimdışı – son sürüm" },
+  preview:    { en:"Preview – tomorrow's plan", tr:"Önizleme – yarının planı" },
   emptyA:     { en:"No plan published for today yet – check back soon",
                 tr:"Bugün için plan henüz yayınlanmadı" },
   emptyB:     { en:"Places and contacts below are always up to date.",
@@ -819,6 +821,7 @@ function render(){
   var today = serviceDayKey(np);
   var tmw = shiftDay(today, 1);
   var mins = serviceMinutes(np);
+  if(previewTomorrow){ today = tmw; tmw = shiftDay(today, 1); mins = -1; }
 
   document.documentElement.lang = (state.lang === "tr") ? "tr" : "en";
 
@@ -840,7 +843,10 @@ function render(){
 
   /* status */
   var st = $("status"), sx = $("status-text");
-  if(state.offline){
+  if(previewTomorrow){
+    st.className = "status off";
+    sx.textContent = tBi("preview");
+  } else if(state.offline){
     st.className = "status off";
     sx.textContent = tBi("offline");
   } else {
@@ -867,6 +873,7 @@ function render(){
     past[i] = (c !== null && c < mins);
     if(nextIdx === -1 && c !== null && c >= mins) nextIdx = i;
   }
+  if(previewTomorrow) nextIdx = -1;
 
   $("banners").innerHTML = banners.map(renderBanner).join("");
 
