@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Plan of the day – Flying Carpet 2026</title>
+<meta name="description" content="Live plan of the day for guests of the Flying Carpet Children Festival 2026, Old Mardin.">
+<meta name="theme-color" content="#3B3283">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Flying Carpet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%233B3283'/%3E%3Cpath d='M16 4 L18.6 13.4 L28 16 L18.6 18.6 L16 28 L13.4 18.6 L4 16 L13.4 13.4 Z' fill='%23FBF4EA'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500;700&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* ---------------------------------------------------------------
+   Flying Carpet Children Festival 2026 - Plan of the day
+   Night sky above (the day's plan), Mardin stone below (the places).
+   --------------------------------------------------------------- */
+:root{
+  --sky1:#3B3283; --sky2:#574BA2; --sky3:#7F73C4; --glow:#9A8FD6;
+  --cream:#FBF4EA; --lav:#D3CBF4; --lav-soft:#CFC6F2; --muted:#A79DDB;
+  --red:#C9372C;
+  --stone:#E6D3AE; --stone-l:#F1E4C6; --stone-d:#B8935C;
+  --ink:#3B2F1E; --ink2:#5C4A2C;
+  --t-arrival:#F6C9B4; --t-transport:#C8D8F3; --t-food:#F8DFA3;
+  --t-show:#F3B8C4; --t-rehearsal:#D9C9F0; --t-workshop:#C7E6D3; --t-info:#EFE6D8;
+  --display:'Alegreya', Georgia, 'Times New Roman', serif;
+  --body:'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --pad:18px;
+}
+*{box-sizing:border-box}
+html{background:var(--sky1);-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  font-family:var(--body);
+  color:var(--cream);
+  background:var(--stone);
+  line-height:1.45;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+a{color:inherit}
+h1,h2,h3{margin:0;font-family:var(--display);font-weight:700}
+ul{margin:0;padding:0;list-style:none}
+p{margin:0}
+.page{max-width:720px;margin:0 auto;padding:0 var(--pad);position:relative;z-index:2}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- SKY ---------- */
+.sky{
+  position:relative;
+  min-height:100vh;
+  min-height:100svh;
+  display:flex;
+  flex-direction:column;
+  background:linear-gradient(180deg,#3B3283 0%,#413688 22%,#4B3F96 52%,#574BA2 100%);
+  padding-top:env(safe-area-inset-top);
+}
+.skylayer{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.star{position:absolute;border-radius:50%;background:#fff;will-change:opacity}
+.sparkle{position:absolute;color:#fff;opacity:.7}
+@keyframes tw{0%,100%{opacity:var(--o)}50%{opacity:calc(var(--o) * .28)}}
+@keyframes twS{0%,100%{opacity:.75;transform:scale(1)}50%{opacity:.3;transform:scale(.8)}}
+.star{animation:tw var(--d) ease-in-out infinite var(--delay)}
+.sparkle{animation:twS var(--d) ease-in-out infinite var(--delay)}
+.bird{position:absolute;opacity:.3;animation:drift var(--d) linear infinite var(--delay);will-change:transform}
+@keyframes drift{from{transform:translate3d(-12vw,14vh,0)}to{transform:translate3d(78vw,-46vh,0)}}
+.planet{position:absolute;top:92px;right:-16px;width:96px;height:96px;z-index:1;opacity:.9;pointer-events:none}
+.skyfoot{
+  flex:1 0 190px;min-height:190px;position:relative;z-index:0;
+  background:
+    radial-gradient(78% 120% at 82% 104%, rgba(154,143,214,.75), rgba(154,143,214,0) 72%),
+    linear-gradient(180deg, rgba(127,115,196,0) 0%, var(--sky3) 92%);
+}
+@media (prefers-reduced-motion: reduce){
+  .star,.sparkle,.bird,.dot{animation:none !important}
+}
+
+/* ---------- TOP BAR + HEADER ---------- */
+.topbar{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:14px 0 10px}
+.eyebrow{
+  font-size:10px;letter-spacing:.13em;text-transform:uppercase;font-weight:600;
+  color:#C6BCEE;max-width:172px;line-height:1.5;padding-top:9px;
+}
+.langpill{display:flex;align-items:center;gap:2px;padding:2px;border-radius:999px;
+  background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.20);
+  backdrop-filter:blur(4px);flex:0 0 auto}
+.langpill button{
+  appearance:none;border:0;background:transparent;color:var(--lav);
+  font-family:var(--body);font-size:11.5px;font-weight:600;letter-spacing:.04em;
+  min-height:44px;min-width:44px;padding:0 7px;border-radius:999px;cursor:pointer;
+}
+.langpill button[aria-pressed="true"]{background:rgba(251,244,234,.94);color:#413688}
+.langpill button:focus-visible{outline:2px solid var(--cream);outline-offset:2px}
+
+.head{padding-bottom:16px}
+h1{font-size:clamp(29px,8.4vw,40px);line-height:1.05;letter-spacing:-.01em}
+.h1tr{font-family:var(--display);font-weight:500;font-size:clamp(16px,4.5vw,20px);
+  color:var(--lav-soft);line-height:1.15;margin-top:2px}
+.dateline{font-size:13.5px;color:var(--lav);margin-top:9px;font-weight:500}
+.dateline.tr{color:var(--lav-soft);font-size:12.5px;margin-top:1px}
+.status{display:flex;align-items:center;gap:7px;margin-top:9px;font-size:12px;color:#C6BCEE}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--red);flex:0 0 auto;
+  box-shadow:0 0 0 0 rgba(201,55,44,.55);animation:pulse 2.8s ease-out infinite}
+.status.off .dot{background:var(--muted);animation:none}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(201,55,44,.5)}70%{box-shadow:0 0 0 7px rgba(201,55,44,0)}100%{box-shadow:0 0 0 0 rgba(201,55,44,0)}}
+
+/* ---------- BANNER ---------- */
+.banner{
+  background:linear-gradient(135deg,#F7E7D6 0%,#F1E4C6 55%,#EFE6D8 100%);
+  color:var(--ink);border-radius:16px;padding:13px 15px 14px 15px;margin-bottom:16px;
+  box-shadow:0 8px 22px rgba(28,20,66,.28), inset 0 1px 0 rgba(255,255,255,.7);
+  display:flex;gap:11px;align-items:flex-start;
+}
+.banner .bsp{flex:0 0 auto;width:17px;height:17px;color:#C9372C;opacity:.85;margin-top:2px}
+.banner .btxt{font-size:14.5px;font-weight:600;line-height:1.4}
+.banner .btr{font-size:13px;font-weight:500;color:var(--ink2);margin-top:3px;line-height:1.4}
+.banner .bnote{font-size:12.5px;color:var(--ink2);margin-top:5px}
+
+/* ---------- TIMELINE ---------- */
+.tl{position:relative;padding-left:34px}
+.tl::before{content:"";position:absolute;left:11px;top:12px;bottom:14px;width:1px;
+  background:linear-gradient(180deg,rgba(167,157,219,0),rgba(167,157,219,.75) 6%,rgba(167,157,219,.75) 94%,rgba(167,157,219,0))}
+.item{position:relative;padding:0 0 22px 0}
+.item:last-child{padding-bottom:6px}
+.node{position:absolute;left:-30px;top:9px;width:15px;height:15px;color:var(--muted)}
+.item[data-type="show"] .node{color:var(--red);opacity:.9}
+.item.past{opacity:.66}
+.ihead{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:3px}
+.tico{flex:0 0 auto;width:27px;height:27px;border-radius:50%;display:grid;place-items:center;
+  border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.07)}
+.tico svg{width:15px;height:15px}
+.time{font-family:var(--display);font-weight:700;font-size:25px;line-height:1.1;color:var(--cream);
+  letter-spacing:.005em}
+.time.txt{font-size:18px;font-weight:500;letter-spacing:.01em;color:var(--lav)}
+.item.past .time{color:var(--lav-soft)}
+.nextchip{font-size:9.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  color:#FFC9C2;border:1px solid rgba(201,55,44,.7);background:rgba(201,55,44,.18);
+  border-radius:999px;padding:3px 9px;line-height:1.3}
+.ten{font-size:16.5px;font-weight:600;color:var(--cream);line-height:1.32}
+.ttr{font-size:14px;font-weight:400;color:var(--lav-soft);line-height:1.32;margin-top:1px}
+.place{display:inline-flex;align-items:center;gap:6px;margin-top:7px;font-size:13.5px;
+  font-weight:500;color:var(--lav);text-decoration:none;min-height:26px}
+a.place{text-decoration:underline;text-decoration-color:rgba(211,203,244,.4);text-underline-offset:3px}
+a.place:hover{color:var(--cream)}
+.place svg{flex:0 0 auto;width:14px;height:14px;opacity:.85}
+.note{font-size:13px;color:var(--lav);margin-top:6px;line-height:1.45;opacity:.92}
+.note.tr{color:var(--lav-soft);font-size:12.5px;margin-top:2px;opacity:.82}
+
+/* ---------- EMPTY + TOMORROW ---------- */
+.empty{border:1px dashed rgba(167,157,219,.6);border-radius:16px;padding:20px 18px;text-align:center;
+  background:rgba(255,255,255,.045)}
+.empty .e1{font-family:var(--display);font-size:19px;font-weight:500;color:var(--cream);line-height:1.3}
+.empty .e1.tr{font-size:16px;color:var(--lav-soft);margin-top:4px}
+.empty .e2{font-size:13px;color:var(--lav);margin-top:12px;line-height:1.45}
+.empty .e2.tr{color:var(--lav-soft);font-size:12.5px;margin-top:2px;opacity:.85}
+.tomorrow{display:flex;gap:9px;align-items:flex-start;margin-top:18px;padding:11px 14px;
+  border-radius:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14)}
+.tomorrow svg{flex:0 0 auto;width:15px;height:15px;color:var(--muted);margin-top:2px}
+.tmlab{font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;font-weight:700;color:#C6BCEE}
+.tmtxt{font-size:13.5px;color:var(--lav);margin-top:2px;line-height:1.4}
+
+/* ---------- SKYLINE ---------- */
+.skyline{background:var(--sky3);line-height:0;margin-bottom:-1px;position:relative;z-index:1}
+.skyline svg{display:block;width:100%;height:118px}
+
+/* ---------- STONE ---------- */
+.stone{
+  position:relative;
+  background-color:var(--stone);
+  background-image:
+    url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.16'/%3E%3C/svg%3E"),
+    repeating-linear-gradient(0deg, rgba(184,147,92,.085) 0 1px, rgba(184,147,92,0) 1px 58px),
+    repeating-linear-gradient(90deg, rgba(184,147,92,.04) 0 1px, rgba(184,147,92,0) 1px 116px),
+    radial-gradient(58% 34% at 18% 22%, rgba(255,252,242,.5), rgba(255,252,242,0) 70%),
+    radial-gradient(52% 30% at 86% 62%, rgba(184,147,92,.16), rgba(184,147,92,0) 72%),
+    radial-gradient(120% 55% at 50% 0%, rgba(241,228,198,.95), rgba(241,228,198,0) 62%);
+  color:var(--ink);
+  padding:26px 0 0;
+}
+.stone::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,rgba(184,147,92,0),rgba(184,147,92,.5),rgba(184,147,92,0))}
+.sechead{margin-bottom:13px}
+.sechead h2{font-size:22px;color:var(--ink);letter-spacing:-.005em}
+.sechead .str{font-family:var(--display);font-weight:500;font-size:15px;color:var(--ink2);margin-top:1px}
+.locs{display:grid;gap:10px}
+.loc{display:flex;gap:11px;align-items:flex-start;text-decoration:none;color:var(--ink);
+  background:linear-gradient(180deg,#F3E7CC 0%,#E8D6B4 100%);
+  border:1px solid rgba(184,147,92,.5);border-radius:15px;padding:13px 15px;min-height:56px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.65), 0 1px 2px rgba(59,47,30,.10)}
+.loc:hover{border-color:rgba(184,147,92,.85)}
+.loc .pin{flex:0 0 auto;width:17px;height:17px;color:var(--stone-d);margin-top:2px}
+.loc .ln{font-size:15px;font-weight:600;line-height:1.3}
+.loc .ltr{font-size:13px;color:var(--ink2);line-height:1.3;margin-top:1px}
+.loc .lnote{font-size:12.5px;color:var(--ink2);margin-top:5px;line-height:1.4}
+.loc .lnote.tr{opacity:.85;margin-top:2px}
+
+.contacts{display:flex;flex-wrap:wrap;gap:10px}
+.chip{display:inline-flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink);
+  background:linear-gradient(180deg,#F5EAD3 0%,#EADCBA 100%);
+  border:1px solid rgba(184,147,92,.55);border-radius:999px;padding:9px 17px 9px 13px;min-height:48px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.7), 0 1px 2px rgba(59,47,30,.10)}
+.chip:hover{border-color:rgba(184,147,92,.9)}
+.chip .wa{flex:0 0 auto;width:22px;height:22px;color:#3f7d52}
+.chip .cn{font-size:14.5px;font-weight:600;line-height:1.2}
+.chip .cp{font-size:12.5px;color:var(--ink2);line-height:1.2;margin-top:1px;font-variant-numeric:tabular-nums}
+.foot{margin-top:26px;padding:16px 0 calc(22px + env(safe-area-inset-bottom));
+  border-top:1px solid rgba(184,147,92,.4);font-size:11.5px;color:var(--ink2);text-align:center;line-height:1.6}
+.foot .fbig{font-family:var(--display);font-size:13px;color:var(--ink);font-weight:500}
+.block{margin-bottom:24px}
+
+/* ---------- DESKTOP ---------- */
+@media (min-width:760px){
+  :root{--pad:28px}
+  .planet{top:70px;right:calc(50% - 372px);width:126px;height:126px}
+  .eyebrow{max-width:none;font-size:11.5px}
+  .head{padding-bottom:20px}
+  .locs{grid-template-columns:1fr 1fr}
+  .skyline svg{height:154px}
+  .item{padding-bottom:26px}
+  .time{font-size:27px}
+  .ten{font-size:17.5px}
+  .ttr{font-size:14.5px}
+  .note{font-size:13.5px}
+  .note.tr{font-size:13px}
+  .place{font-size:14px}
+  .banner .btxt{font-size:15px}
+  .sechead h2{font-size:24px}
+}
+@media (min-width:420px) and (max-width:759px){
+  .eyebrow{max-width:200px}
+}
+</style>
+</head>
+<body>
+
+<!-- inline icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <g id="ic-arrival"><path d="M21.4 2.6 3.1 10.2l6.9 2.8 2.8 6.9z"/><path d="M21.4 2.6 10 13"/></g>
+    <g id="ic-transport"><rect x="3.6" y="3.6" width="16.8" height="12.8" rx="2.6"/><path d="M3.6 12.4h16.8M7.2 19.8v-3.4M16.8 19.8v-3.4M7.4 15h.01M16.6 15h.01"/></g>
+    <g id="ic-food"><path d="M6.6 2.6v5.2a2.6 2.6 0 0 0 5.2 0V2.6M9.2 10.4V21.4M6.6 2.6v4.4M11.8 2.6v4.4M17.4 21.4v-7.2c1.6-.5 2.6-2 2.6-4.2 0-3-1.1-5.6-2.6-7.4-1.5 1.8-2.6 4.4-2.6 7.4 0 2.2 1 3.7 2.6 4.2z"/></g>
+    <g id="ic-show"><path d="M12 2.2l1.9 6 6.4 1.9-6.4 1.9-1.9 6-1.9-6L3.7 10l6.4-1.9zM19 16.4l.7 2.1 2.1.7-2.1.7-.7 2.1-.7-2.1-2.1-.7 2.1-.7z"/></g>
+    <g id="ic-rehearsal"><path d="M9 18V5.4l10-2.1v12.4"/><ellipse cx="6.4" cy="18.2" rx="2.7" ry="2.3"/><ellipse cx="16.4" cy="15.9" rx="2.7" ry="2.3"/></g>
+    <g id="ic-workshop"><circle cx="6.2" cy="17.6" r="2.6"/><circle cx="6.2" cy="6.4" r="2.6"/><path d="M8.5 16.2L19.5 4.2M8.5 7.8L19.5 19.8"/></g>
+    <g id="ic-info"><circle cx="12" cy="12" r="9.2"/><path d="M12 11v6M12 7.4h.01"/></g>
+    <g id="ic-pin"><path d="M12 21.5s7-6.1 7-11.1a7 7 0 10-14 0c0 5 7 11.1 7 11.1z"/><circle cx="12" cy="10.2" r="2.6"/></g>
+    <g id="ic-moon"><path d="M20.2 14.4A8.6 8.6 0 019.6 3.8a8.7 8.7 0 1010.6 10.6z"/></g>
+    <g id="ic-spark"><path d="M12 2.6l1.7 5.4 5.4 1.7-5.4 1.7L12 16.8l-1.7-5.4L4.9 9.7l5.4-1.7z"/></g>
+    <g id="ic-wa"><path d="M3.3 20.7l1.3-4.6a8.2 8.2 0 111.6 1.7l-2.9.9"/><path d="M8.9 8.1c.2-.4.4-.4.7-.4h.5c.2 0 .4 0 .6.5l.7 1.7c.1.2.1.4 0 .6l-.4.5c-.1.2-.3.3-.1.6.5.9 1.5 1.9 2.7 2.4.3.1.4 0 .6-.1l.6-.7c.2-.2.3-.2.6-.1l1.6.8c.2.1.4.2.4.4a2 2 0 01-1.3 1.7c-.4.2-1 .2-3-.7-2.2-1-3.7-3.2-3.8-3.4-.1-.2-.9-1.3-.9-2.4 0-1.1.6-1.6.8-1.8z"/></g>
+  </defs>
+</svg>
+
+<div class="sky">
+  <div class="skylayer" id="skylayer" aria-hidden="true"></div>
+
+  <svg class="planet" viewBox="0 0 120 120" aria-hidden="true" focusable="false">
+    <defs>
+      <radialGradient id="pl" cx="34%" cy="30%" r="78%">
+        <stop offset="0%" stop-color="#F6F9FD"/>
+        <stop offset="62%" stop-color="#E9EEF5"/>
+        <stop offset="100%" stop-color="#B9B5DC"/>
+      </radialGradient>
+    </defs>
+    <circle cx="62" cy="72" r="38" fill="url(#pl)"/>
+    <path d="M62 34a38 38 0 0130.6 60.6A38 38 0 0162 34z" fill="#B9B5DC" opacity=".38"/>
+    <ellipse cx="47" cy="62" rx="7" ry="5" fill="#B9B5DC" opacity=".33"/>
+    <ellipse cx="70" cy="90" rx="9" ry="5.5" fill="#B9B5DC" opacity=".26"/>
+    <ellipse cx="76" cy="58" rx="4" ry="3" fill="#B9B5DC" opacity=".3"/>
+    <path d="M55 38c0 4-.6 7-2.6 9.6" stroke="#5F8F5C" stroke-width="2.1" fill="none" stroke-linecap="round"/>
+    <path d="M52.6 43.4c-2.6.3-4.6-.8-5.4-2.6 2 .1 4 .6 5.4 2.6z" fill="#5F8F5C" opacity=".9"/>
+    <circle cx="55.6" cy="34.4" r="4.6" fill="#C9372C"/>
+    <circle cx="55" cy="34" r="2.6" fill="#E05B4C" opacity=".8"/>
+    <circle cx="55.2" cy="33.6" r="1.1" fill="#F3B8C4" opacity=".85"/>
+  </svg>
+
+  <div class="page">
+    <div class="topbar">
+      <div class="eyebrow">Flying Carpet Children Festival 2026</div>
+      <div class="langpill" role="group" id="langpill" aria-label="Language / Dil">
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang="tr" aria-pressed="false">TR</button>
+        <button type="button" data-lang="both" aria-pressed="true">EN+TR</button>
+      </div>
+    </div>
+
+    <header class="head">
+      <h1 id="t-en">Plan of the day</h1>
+      <div class="h1tr" id="t-tr">Günün planı</div>
+      <div class="dateline" id="d-en"></div>
+      <div class="dateline tr" id="d-tr"></div>
+      <div class="status" id="status" role="status"><span class="dot"></span><span id="status-text">Loading</span></div>
+    </header>
+
+    <div id="banners"></div>
+    <main id="plan"></main>
+    <div id="tomorrow"></div>
+    <noscript><div class="empty"><div class="e1">This page needs JavaScript to show the live plan.</div><div class="e2">Bu sayfanın canlı planı göstermesi için JavaScript gerekir.</div></div></noscript>
+  </div>
+
+  <div class="skyfoot"></div>
+</div>
+
+<div class="skyline" aria-hidden="true">
+  <svg viewBox="0 0 1200 160" preserveAspectRatio="xMidYMax slice" focusable="false">
+    <!-- far ridge: moonlit roofs, violet stone -->
+    <path fill="#9086C9" d="M0 160V98h86V80h64v26h58V64h9v42h84V86h70V102h70V76h60V92h72V82h68v20h58V72h9v30h70V90h72v14h60V84h62v18h68V94h60v66z"/>
+    <g fill="#F8DFA3" opacity=".38">
+      <rect x="26" y="112" width="7" height="9" rx="1.6"/>
+      <rect x="106" y="92" width="7" height="9" rx="1.6"/>
+      <rect x="336" y="98" width="7" height="9" rx="1.6"/>
+      <rect x="612" y="94" width="7" height="9" rx="1.6"/>
+      <rect x="884" y="102" width="7" height="9" rx="1.6"/>
+      <rect x="1116" y="106" width="7" height="9" rx="1.6"/>
+    </g>
+    <!-- front ridge: Mardin stone -->
+    <path fill="#E6D3AE" d="M0 160v-46h62V98h68v24h56V90h10v32h66V106h68V120h62V94h60V72h10v22h58V112h66V100h62V118h68V92h64V108h66V122h64V96h62V110h68V100h70V116h90v44z"/>
+    <path fill="#F1E4C6" opacity=".55" d="M0 114h62v2.4H0zM130 98h56v2.4h-56zM252 90h76v2.4h-76zM394 106h68v2.4h-68zM524 94h60v2.4h-60zM652 112h66v2.4h-66zM784 100h62v2.4h-62zM914 108h66v2.4h-66zM1044 96h62v2.4h-62z"/>
+    <path fill="#D3BC90" d="M0 160v-9h1200v9z"/>
+    <g fill="#F8DFA3" opacity=".92">
+      <rect x="18" y="128" width="9" height="12" rx="2"/>
+      <rect x="42" y="128" width="9" height="12" rx="2"/>
+      <rect x="76" y="110" width="9" height="12" rx="2"/>
+      <rect x="100" y="110" width="9" height="12" rx="2"/>
+      <rect x="150" y="134" width="9" height="12" rx="2"/>
+      <rect x="204" y="104" width="9" height="12" rx="2"/>
+      <rect x="230" y="104" width="9" height="12" rx="2"/>
+      <rect x="276" y="120" width="8" height="11" rx="2"/>
+      <rect x="342" y="132" width="9" height="12" rx="2"/>
+      <rect x="410" y="108" width="9" height="12" rx="2"/>
+      <rect x="436" y="108" width="9" height="12" rx="2"/>
+      <rect x="490" y="86" width="8" height="11" rx="2"/>
+      <rect x="546" y="108" width="9" height="12" rx="2"/>
+      <rect x="572" y="108" width="9" height="12" rx="2"/>
+      <rect x="668" y="126" width="9" height="12" rx="2"/>
+      <rect x="694" y="126" width="9" height="12" rx="2"/>
+      <rect x="800" y="114" width="9" height="12" rx="2"/>
+      <rect x="826" y="114" width="9" height="12" rx="2"/>
+      <rect x="866" y="106" width="9" height="12" rx="2"/>
+      <rect x="930" y="122" width="9" height="12" rx="2"/>
+      <rect x="956" y="122" width="9" height="12" rx="2"/>
+      <rect x="1004" y="136" width="9" height="12" rx="2"/>
+      <rect x="1060" y="110" width="9" height="12" rx="2"/>
+      <rect x="1086" y="110" width="9" height="12" rx="2"/>
+      <rect x="1140" y="124" width="9" height="12" rx="2"/>
+      <rect x="1164" y="124" width="9" height="12" rx="2"/>
+    </g>
+  </svg>
+</div>
+
+<section class="stone">
+  <div class="page">
+    <div class="block" id="places-block">
+      <div class="sechead"><h2 id="places-h">Places</h2><div class="str" id="places-h-tr">Yerler</div></div>
+      <div class="locs" id="locations"></div>
+    </div>
+    <div class="block" id="contacts-block">
+      <div class="sechead"><h2 id="contacts-h">Contacts</h2><div class="str" id="contacts-h-tr">İletişim</div></div>
+      <div class="contacts" id="contacts"></div>
+    </div>
+    <div class="foot">
+      <div class="fbig">Flying Carpet Children Festival 2026</div>
+      <div id="foot-note"></div>
+    </div>
+  </div>
+</section>
+
+<script>
+(function(){
+"use strict";
+
+/* =====================================================================
+   0. Config
+   ===================================================================== */
+var SHEET_ID = "1O_IHU-kOUGA-q7-1gU5Wkb-9avxUSYfmoEjuzHHra_A";
+/* export = raw displayed values, every row, no type guessing (verified CORS ok 20 Aug).
+   gviz = fallback only: it blanks cells that do not match a column's guessed type (e.g. "Date" header, "On arrival"). */
+var URL_PRIMARY = "https://docs.google.com/spreadsheets/d/" + SHEET_ID + "/export?format=csv";
+var URL_FALLBACK = "https://docs.google.com/spreadsheets/d/" + SHEET_ID + "/gviz/tq?tqx=out:csv&headers=0";
+var TZ = "Europe/Istanbul";
+var DAY_FLIP_HOUR = 4;      /* the festival service day flips at 04:00 */
+var REFRESH_MS = 60000;
+var LS_LANG = "fc26.lang";
+var LS_CSV  = "fc26.csv.";
+
+var params = new URLSearchParams(location.search);
+var csvOverride = params.get("csv");
+var nowOverride = params.get("now");
+
+/* =====================================================================
+   1. Tiny helpers
+   ===================================================================== */
+function $(id){ return document.getElementById(id); }
+function esc(s){
+  return String(s == null ? "" : s)
+    .replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")
+    .replace(/"/g,"&quot;").replace(/'/g,"&#39;");
+}
+function safeUrl(u){
+  u = String(u || "").trim();
+  return /^https?:\/\//i.test(u) ? u : "";
+}
+function store(key, val){
+  try{
+    if(val === undefined) return localStorage.getItem(key);
+    localStorage.setItem(key, val);
+  }catch(e){ /* private mode or storage full - ignore */ }
+  return null;
+}
+function pad2(n){ return (n < 10 ? "0" : "") + n; }
+
+/* =====================================================================
+   2. RFC4180 CSV parser
+   ===================================================================== */
+function parseCSV(text){
+  var rows = [], row = [], field = "", i = 0, inQ = false, c;
+  if(text.charCodeAt(0) === 0xFEFF) text = text.slice(1);
+  while(i < text.length){
+    c = text.charAt(i);
+    if(inQ){
+      if(c === '"'){
+        if(text.charAt(i+1) === '"'){ field += '"'; i += 2; }
+        else { inQ = false; i++; }
+      } else { field += c; i++; }
+    } else if(c === '"'){ inQ = true; i++; }
+    else if(c === ","){ row.push(field); field = ""; i++; }
+    else if(c === "\r"){
+      if(text.charAt(i+1) === "\n") i++;
+      row.push(field); field = ""; rows.push(row); row = []; i++;
+    }
+    else if(c === "\n"){ row.push(field); field = ""; rows.push(row); row = []; i++; }
+    else { field += c; i++; }
+  }
+  row.push(field); rows.push(row);
+  return rows;
+}
+function rowEmpty(r){
+  for(var i = 0; i < r.length; i++){ if(String(r[i]).trim() !== "") return false; }
+  return true;
+}
+
+/* =====================================================================
+   3. Dates - lenient parsing, Istanbul service day
+   ===================================================================== */
+function trNorm(s){
+  return String(s || "")
+    .replace(/[İIı]/g,"i").replace(/[şŞ]/g,"s").replace(/[ğĞ]/g,"g")
+    .replace(/[çÇ]/g,"c").replace(/[öÖ]/g,"o").replace(/[üÜ]/g,"u")
+    .toLowerCase().trim();
+}
+var MONTH_WORDS = {
+  1:["jan","january","oca","ocak"],      2:["feb","february","sub","subat"],
+  3:["mar","march","mart"],              4:["apr","april","nis","nisan"],
+  5:["may","mayis"],                     6:["jun","june","haz","haziran"],
+  7:["jul","july","tem","temmuz"],       8:["aug","august","agu","agustos"],
+  9:["sep","sept","september","eyl","eylul"], 10:["oct","october","eki","ekim"],
+  11:["nov","november","kas","kasim"],   12:["dec","december","ara","aralik"]
+};
+var MONTH_MAP = (function(){
+  var m = {}, k, i;
+  for(k in MONTH_WORDS){ for(i = 0; i < MONTH_WORDS[k].length; i++) m[MONTH_WORDS[k][i]] = +k; }
+  return m;
+})();
+function monthFromWord(w){
+  w = trNorm(w).replace(/\.$/,"");
+  if(MONTH_MAP[w]) return MONTH_MAP[w];
+  if(w.length >= 3 && MONTH_MAP[w.slice(0,3)]) return MONTH_MAP[w.slice(0,3)];
+  return 0;
+}
+function mkKey(y,m,d){ return y + "-" + pad2(m) + "-" + pad2(d); }
+function fixYear(y, cur){
+  if(y == null || y === "" || isNaN(y)) return cur;
+  y = +y;
+  if(y < 100) y += 2000;
+  return y;
+}
+/* Returns "YYYY-MM-DD" or "" */
+function parseDate(raw, curYear){
+  var s = String(raw == null ? "" : raw).trim();
+  if(!s) return "";
+  var m;
+
+  /* Google gviz sometimes emits Date(2026,7,20) */
+  m = s.match(/^Date\((\d{4}),\s*(\d{1,2}),\s*(\d{1,2})/i);
+  if(m) return mkKey(+m[1], (+m[2]) + 1, +m[3]);
+
+  /* strip a trailing time part */
+  s = s.replace(/[T\s]+\d{1,2}:\d{2}(:\d{2})?(\s*[APap][Mm])?$/, "").trim();
+
+  /* 4-digit-first: Y-M-D */
+  m = s.match(/^(\d{4})[-.\/](\d{1,2})[-.\/](\d{1,2})$/);
+  if(m) return mkKey(+m[1], +m[2], +m[3]);
+
+  /* dots: D.M.Y (year optional) */
+  m = s.match(/^(\d{1,2})\.(\d{1,2})(?:\.(\d{2,4}))?\.?$/);
+  if(m) return mkKey(fixYear(m[3], curYear), +m[2], +m[1]);
+
+  /* slashes (and dashes): Google's US default is M/D unless proven otherwise */
+  m = s.match(/^(\d{1,2})([\/\-])(\d{1,2})(?:\2(\d{2,4}))?$/);
+  if(m) m = [m[0], m[1], m[3], m[4]];
+  if(m){
+    var a = +m[1], b = +m[2], y = fixYear(m[3], curYear);
+    if(a > 12) return mkKey(y, b, a);        /* D/M/Y */
+    if(b > 12) return mkKey(y, a, b);        /* M/D/Y */
+    return mkKey(y, a, b);                   /* assume M/D/Y */
+  }
+
+  /* "20 Aug 2026", "20 Aug", "20 Ağustos" */
+  m = s.match(/^(\d{1,2})[\s.\-]+([^\s.,\-\d]+)\.?(?:[\s.,\-]+(\d{2,4}))?$/);
+  if(m){
+    var mo = monthFromWord(m[2]);
+    if(mo) return mkKey(fixYear(m[3], curYear), mo, +m[1]);
+  }
+
+  /* "Aug 20", "Aug 20 2026", "Ağustos 20" */
+  m = s.match(/^([^\s.,\-\d]+)\.?[\s.,\-]+(\d{1,2})(?:[\s.,\-]+(\d{2,4}))?$/);
+  if(m){
+    var mo2 = monthFromWord(m[1]);
+    if(mo2) return mkKey(fixYear(m[3], curYear), mo2, +m[2]);
+  }
+  return "";
+}
+
+/* Wall-clock parts in Istanbul, computed via Intl (never local time). */
+function istanbulParts(date){
+  var p = {}, i, parts;
+  try{
+    parts = new Intl.DateTimeFormat("en-GB", {
+      timeZone: TZ, year:"numeric", month:"2-digit", day:"2-digit",
+      hour:"2-digit", minute:"2-digit", hour12:false
+    }).formatToParts(date);
+    for(i = 0; i < parts.length; i++) p[parts[i].type] = parts[i].value;
+    var h = parseInt(p.hour, 10); if(h === 24) h = 0;
+    return { y:+p.year, m:+p.month, d:+p.day, h:h, mi:+p.minute };
+  }catch(e){
+    /* extremely defensive fallback: UTC+3 */
+    var t = new Date(date.getTime() + 3*3600*1000);
+    return { y:t.getUTCFullYear(), m:t.getUTCMonth()+1, d:t.getUTCDate(),
+             h:t.getUTCHours(), mi:t.getUTCMinutes() };
+  }
+}
+function nowParts(){
+  if(nowOverride){
+    var m = String(nowOverride).match(/^(\d{4})-(\d{1,2})-(\d{1,2})(?:[T\s](\d{1,2}):(\d{2}))?/);
+    if(m) return { y:+m[1], m:+m[2], d:+m[3], h:m[4] ? +m[4] : 12, mi:m[5] ? +m[5] : 0 };
+  }
+  return istanbulParts(new Date());
+}
+function shiftDay(key, delta){
+  var p = key.split("-");
+  var d = new Date(Date.UTC(+p[0], +p[1]-1, +p[2]));
+  d.setUTCDate(d.getUTCDate() + delta);
+  return mkKey(d.getUTCFullYear(), d.getUTCMonth()+1, d.getUTCDate());
+}
+function serviceDayKey(np){
+  var key = mkKey(np.y, np.m, np.d);
+  return np.h < DAY_FLIP_HOUR ? shiftDay(key, -1) : key;
+}
+/* minutes since the start of the service day (04:00 flip aware) */
+function serviceMinutes(np){
+  var mins = np.h * 60 + np.mi;
+  return np.h < DAY_FLIP_HOUR ? mins + 1440 : mins;
+}
+function parseClock(t){
+  var m = String(t || "").match(/(^|[^\d])([0-2]?\d)[:.]([0-5]\d)(?![\d])/);
+  if(!m) return null;
+  var h = +m[2], mi = +m[3];
+  if(h > 23) return null;
+  return h < DAY_FLIP_HOUR ? h*60 + mi + 1440 : h*60 + mi;
+}
+function dateLine(key, locale){
+  var p = key.split("-");
+  var d = new Date(Date.UTC(+p[0], +p[1]-1, +p[2], 12, 0, 0));
+  try{
+    return new Intl.DateTimeFormat(locale, {
+      timeZone:"UTC", weekday:"long", day:"numeric", month:"long"
+    }).format(d);
+  }catch(e){
+    return p[2] + "." + p[1] + "." + p[0];
+  }
+}
+
+/* =====================================================================
+   4. UI strings
+   ===================================================================== */
+var STR = {
+  title:      { en:"Plan of the day",  tr:"Günün planı" },
+  places:     { en:"Places",           tr:"Yerler" },
+  contacts:   { en:"Contacts",         tr:"İletişim" },
+  tomorrow:   { en:"Tomorrow",         tr:"Yarın" },
+  updated:    { en:"Updated",          tr:"Güncellendi" },
+  next:       { en:"next",             tr:"sıradaki" },
+  loading:    { en:"Loading the plan", tr:"Plan yükleniyor" },
+  offline:    { en:"Offline – showing last version", tr:"Çevrimdışı – son sürüm" },
+  emptyA:     { en:"No plan published for today yet – check back soon",
+                tr:"Bugün için plan henüz yayınlanmadı" },
+  emptyB:     { en:"Places and contacts below are always up to date.",
+                tr:"Aşağıdaki yerler ve iletişim bilgileri her zaman geçerlidir." },
+  footer:     { en:"Old Mardin – updates appear here by themselves",
+                tr:"Eski Mardin – güncellemeler bu sayfada kendiliğinden görünür" }
+};
+var TYPE_ICON = {
+  arrival:"ic-arrival", transport:"ic-transport", food:"ic-food", show:"ic-show",
+  rehearsal:"ic-rehearsal", workshop:"ic-workshop", info:"ic-info"
+};
+var TYPE_TINT = {
+  arrival:"#F6C9B4", transport:"#C8D8F3", food:"#F8DFA3", show:"#F3B8C4",
+  rehearsal:"#D9C9F0", workshop:"#C7E6D3", info:"#EFE6D8"
+};
+var KNOWN_TYPES = {arrival:1,transport:1,food:1,show:1,rehearsal:1,workshop:1,
+                   info:1,banner:1,location:1,contact:1};
+
+/* =====================================================================
+   5. State
+   ===================================================================== */
+var state = {
+  lang: "both",
+  rows: null,
+  updated: "",
+  offline: false,
+  sourceKey: csvOverride || "live"
+};
+(function(){
+  var saved = store(LS_LANG);
+  if(saved === "en" || saved === "tr" || saved === "both") state.lang = saved;
+})();
+
+function isEN(){ return state.lang === "en" || state.lang === "both"; }
+function isTR(){ return state.lang === "tr" || state.lang === "both"; }
+function both(){ return state.lang === "both"; }
+/* text for a single-line mode: TR mode falls back to EN when TR is empty */
+function one(en, tr){ return state.lang === "tr" ? (tr || en) : en; }
+function t(key){ return state.lang === "tr" ? STR[key].tr : STR[key].en; }
+function tBi(key){
+  return both() ? STR[key].en + " / " + STR[key].tr : t(key);
+}
+/* Same as tBi but wraps the Turkish part in lang="tr" so CSS uppercase gives İ, not I */
+function tBiHtml(key){
+  if(both()) return esc(STR[key].en) + ' / <span lang="tr">' + esc(STR[key].tr) + '</span>';
+  return esc(t(key));
+}
+
+/* =====================================================================
+   6. Rows from CSV
+   ===================================================================== */
+var FIELDS = {
+  "date":"date", "time":"time", "type":"type",
+  "what (en)":"en", "what(en)":"en", "what en":"en", "what":"en",
+  "what (tr)":"tr", "what(tr)":"tr", "what tr":"tr",
+  "where":"where",
+  "maps link":"map", "maps":"map", "map link":"map", "link":"map",
+  "note (en)":"noteEn", "note(en)":"noteEn", "note en":"noteEn", "note":"noteEn",
+  "note (tr)":"noteTr", "note(tr)":"noteTr", "note tr":"noteTr"
+};
+function toRows(csvText){
+  var grid = parseCSV(csvText), i, j, headerAt = -1, cell;
+  for(i = 0; i < grid.length; i++){
+    var hasType = false, hasWhat = false;
+    for(j = 0; j < grid[i].length; j++){
+      cell = String(grid[i][j]).trim().toLowerCase();
+      if(cell === "type") hasType = true;
+      if(cell.indexOf("what") === 0) hasWhat = true;
+    }
+    if(hasType && hasWhat){ headerAt = i; break; }
+  }
+  if(headerAt < 0) return [];
+
+  var map = {};
+  for(j = 0; j < grid[headerAt].length; j++){
+    var name = String(grid[headerAt][j]).trim().toLowerCase().replace(/\s+/g," ");
+    if(FIELDS[name] && map[FIELDS[name]] === undefined) map[FIELDS[name]] = j;
+  }
+  /* gviz blanks the "Date" / "Time" header cells (typed columns): fall back to the sheet's standard column order */
+  if(map.date === undefined && String(grid[headerAt][0] || "").trim() === "") map.date = 0;
+  if(map.time === undefined && String(grid[headerAt][1] || "").trim() === "") map.time = 1;
+  function get(r, k){
+    var idx = map[k];
+    return idx === undefined ? "" : String(r[idx] === undefined ? "" : r[idx]).trim();
+  }
+
+  var curYear = nowParts().y;
+  var out = [];
+  for(i = headerAt + 1; i < grid.length; i++){
+    var r = grid[i];
+    if(rowEmpty(r)) continue;
+    var type = get(r, "type").toLowerCase();
+    if(!KNOWN_TYPES[type]) type = "info";
+    out.push({
+      dateRaw: get(r, "date"),
+      date: parseDate(get(r, "date"), curYear),
+      time: get(r, "time"),
+      type: type,
+      en: get(r, "en"),
+      tr: get(r, "tr"),
+      where: get(r, "where"),
+      map: safeUrl(get(r, "map")),
+      noteEn: get(r, "noteEn"),
+      noteTr: get(r, "noteTr")
+    });
+  }
+  return out;
+}
+
+/* =====================================================================
+   7. Render
+   ===================================================================== */
+function icon(id, cls, tint){
+  return '<svg class="' + cls + '" viewBox="0 0 24 24" fill="none" stroke="' +
+    (tint || "currentColor") + '" stroke-width="1.6" stroke-linecap="round" ' +
+    'stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#' + id + '"/></svg>';
+}
+function placeLine(row){
+  if(!row.where && !row.map) return "";
+  var label = esc(row.where || row.map.replace(/^https?:\/\//,""));
+  var pin = icon("ic-pin", "", "currentColor");
+  if(row.map){
+    return '<a class="place" href="' + esc(row.map) + '" target="_blank" rel="noopener noreferrer">' +
+           pin + '<span>' + label + '</span></a>';
+  }
+  return '<span class="place">' + pin + '<span>' + label + '</span></span>';
+}
+function notes(row){
+  var h = "";
+  if(both()){
+    if(row.noteEn) h += '<p class="note">' + esc(row.noteEn) + '</p>';
+    if(row.noteTr) h += '<p class="note tr">' + esc(row.noteTr) + '</p>';
+  } else {
+    var n = one(row.noteEn, row.noteTr);
+    if(n) h += '<p class="note">' + esc(n) + '</p>';
+  }
+  return h;
+}
+function titles(row, clsEn, clsTr){
+  var h = "";
+  if(both()){
+    if(row.en) h += '<div class="' + clsEn + '">' + esc(row.en) + '</div>';
+    if(row.tr && row.tr !== row.en) h += '<div class="' + clsTr + '">' + esc(row.tr) + '</div>';
+  } else {
+    var v = one(row.en, row.tr);
+    if(v) h += '<div class="' + clsEn + '">' + esc(v) + '</div>';
+  }
+  return h;
+}
+var NODE_STAR = '<svg class="node" viewBox="0 0 12 12" aria-hidden="true" focusable="false">' +
+  '<path d="M6 0 L7.15 4.85 L12 6 L7.15 7.15 L6 12 L4.85 7.15 L0 6 L4.85 4.85 Z" fill="currentColor"/></svg>';
+
+function renderBanner(row){
+  var h = '<div class="banner">' +
+    icon("ic-spark", "bsp", "currentColor").replace('class="bsp"', 'class="bsp" width="17" height="17"') +
+    '<div>';
+  if(both()){
+    if(row.en) h += '<div class="btxt">' + esc(row.en) + '</div>';
+    if(row.tr && row.tr !== row.en) h += '<div class="btr">' + esc(row.tr) + '</div>';
+    if(row.noteEn) h += '<div class="bnote">' + esc(row.noteEn) + '</div>';
+  } else {
+    h += '<div class="btxt">' + esc(one(row.en, row.tr)) + '</div>';
+    var n = one(row.noteEn, row.noteTr);
+    if(n) h += '<div class="bnote">' + esc(n) + '</div>';
+  }
+  return h + '</div></div>';
+}
+
+function renderItem(row, isPast, isNext){
+  var tint = TYPE_TINT[row.type] || TYPE_TINT.info;
+  var cls = "item" + (isPast ? " past" : "");
+  var h = '<li class="' + cls + '" data-type="' + esc(row.type) + '">' + NODE_STAR;
+  h += '<div class="ihead">';
+  h += '<span class="tico" style="border-color:' + tint + '55;background:' + tint + '1F">' +
+       icon(TYPE_ICON[row.type] || "ic-info", "", tint) + '</span>';
+  if(row.time){
+    var parsed = parseClock(row.time) !== null;
+    h += '<span class="time' + (parsed ? "" : " txt") + '">' + esc(row.time) + '</span>';
+  }
+  if(isNext) h += '<span class="nextchip">' + tBiHtml("next") + '</span>';
+  h += '</div>';
+  h += titles(row, "ten", "ttr");
+  h += placeLine(row);
+  h += notes(row);
+  return h + '</li>';
+}
+
+function renderLocation(row){
+  var url = row.map;
+  var tag = url ? "a" : "div";
+  var attrs = url ? ' href="' + esc(url) + '" target="_blank" rel="noopener noreferrer"' : "";
+  var h = '<' + tag + ' class="loc"' + attrs + '>' + icon("ic-pin", "pin", "currentColor") + '<div>';
+  if(both()){
+    if(row.en) h += '<div class="ln">' + esc(row.en) + '</div>';
+    if(row.tr && row.tr !== row.en) h += '<div class="ltr">' + esc(row.tr) + '</div>';
+    if(row.noteEn) h += '<div class="lnote">' + esc(row.noteEn) + '</div>';
+    if(row.noteTr) h += '<div class="lnote tr">' + esc(row.noteTr) + '</div>';
+  } else {
+    h += '<div class="ln">' + esc(one(row.en, row.tr)) + '</div>';
+    var n = one(row.noteEn, row.noteTr);
+    if(n) h += '<div class="lnote">' + esc(n) + '</div>';
+  }
+  return h + '</div></' + tag + '>';
+}
+
+function renderContact(row){
+  var name = both() ? row.en : one(row.en, row.tr);
+  var phone = row.noteEn || row.noteTr;
+  var url = row.map;
+  var tag = url ? "a" : "div";
+  var attrs = url ? ' href="' + esc(url) + '" target="_blank" rel="noopener noreferrer"' : "";
+  return '<' + tag + ' class="chip"' + attrs + '>' +
+    icon("ic-wa", "wa", "currentColor") +
+    '<span><span class="cn">' + esc(name) + '</span>' +
+    (phone ? '<span class="cp" style="display:block">' + esc(phone) + '</span>' : "") +
+    '</span></' + tag + '>';
+}
+
+function render(){
+  var rows = state.rows || [];
+  var np = nowParts();
+  var today = serviceDayKey(np);
+  var tmw = shiftDay(today, 1);
+  var mins = serviceMinutes(np);
+
+  document.documentElement.lang = (state.lang === "tr") ? "tr" : "en";
+
+  /* header text */
+  $("t-en").textContent = state.lang === "tr" ? STR.title.tr : STR.title.en;
+  $("t-en").style.display = "";
+  $("t-tr").textContent = STR.title.tr;
+  $("t-tr").style.display = both() ? "" : "none";
+  $("d-en").textContent = state.lang === "tr" ? dateLine(today, "tr-TR") : dateLine(today, "en-GB");
+  $("d-tr").textContent = dateLine(today, "tr-TR");
+  $("d-tr").style.display = both() ? "" : "none";
+  $("places-h").textContent = state.lang === "tr" ? STR.places.tr : STR.places.en;
+  $("places-h-tr").textContent = STR.places.tr;
+  $("places-h-tr").style.display = both() ? "" : "none";
+  $("contacts-h").textContent = state.lang === "tr" ? STR.contacts.tr : STR.contacts.en;
+  $("contacts-h-tr").textContent = STR.contacts.tr;
+  $("contacts-h-tr").style.display = both() ? "" : "none";
+  $("foot-note").textContent = both() ? STR.footer.en + " / " + STR.footer.tr : t("footer");
+
+  /* status */
+  var st = $("status"), sx = $("status-text");
+  if(state.offline){
+    st.className = "status off";
+    sx.textContent = tBi("offline");
+  } else {
+    st.className = "status";
+    sx.textContent = state.updated
+      ? tBi("updated") + " " + state.updated
+      : tBi("loading");
+  }
+
+  /* buckets */
+  var banners = [], items = [], locations = [], contacts = [], tomorrowRows = [];
+  for(var i = 0; i < rows.length; i++){
+    var r = rows[i];
+    if(r.type === "location"){ locations.push(r); continue; }
+    if(r.type === "contact"){ contacts.push(r); continue; }
+    if(r.date === today){ (r.type === "banner" ? banners : items).push(r); continue; }
+    if(r.date === tmw) tomorrowRows.push(r);
+  }
+
+  /* next-upcoming marker */
+  var nextIdx = -1, past = [];
+  for(i = 0; i < items.length; i++){
+    var c = parseClock(items[i].time);
+    past[i] = (c !== null && c < mins);
+    if(nextIdx === -1 && c !== null && c >= mins) nextIdx = i;
+  }
+
+  $("banners").innerHTML = banners.map(renderBanner).join("");
+
+  var planHtml;
+  if(items.length){
+    planHtml = '<ul class="tl">' + items.map(function(r, k){
+      return renderItem(r, past[k], k === nextIdx);
+    }).join("") + '</ul>';
+  } else if(banners.length || state.rows === null){
+    /* rows === null means the very first fetch has not answered yet - stay quiet */
+    planHtml = "";
+  } else {
+    planHtml = '<div class="empty"><div class="e1">' + esc(t("emptyA")) + '</div>' +
+      (both() ? '<div class="e1 tr">' + esc(STR.emptyA.tr) + '</div>' : "") +
+      '<div class="e2">' + esc(both() ? STR.emptyB.en : t("emptyB")) + '</div>' +
+      (both() ? '<div class="e2 tr">' + esc(STR.emptyB.tr) + '</div>' : "") + '</div>';
+  }
+  $("plan").innerHTML = planHtml;
+
+  /* tomorrow peek */
+  var tmwEl = $("tomorrow");
+  if(tomorrowRows.length){
+    var pick = null;
+    for(i = 0; i < tomorrowRows.length; i++){
+      if(tomorrowRows[i].type === "banner"){ pick = tomorrowRows[i]; break; }
+    }
+    if(!pick) pick = tomorrowRows[0];
+    var txt = both() ? (pick.en || pick.tr) : one(pick.en, pick.tr);
+    tmwEl.innerHTML = '<div class="tomorrow">' + icon("ic-moon", "", "currentColor") +
+      '<div><div class="tmlab">' + tBiHtml("tomorrow") + '</div>' +
+      '<div class="tmtxt">' + esc(txt) + '</div></div></div>';
+  } else {
+    tmwEl.innerHTML = "";
+  }
+
+  /* stone */
+  $("locations").innerHTML = locations.map(renderLocation).join("");
+  $("places-block").style.display = locations.length ? "" : "none";
+  $("contacts").innerHTML = contacts.map(renderContact).join("");
+  $("contacts-block").style.display = contacts.length ? "" : "none";
+
+  /* language pill state */
+  var btns = $("langpill").getElementsByTagName("button");
+  for(i = 0; i < btns.length; i++){
+    btns[i].setAttribute("aria-pressed", btns[i].getAttribute("data-lang") === state.lang ? "true" : "false");
+  }
+}
+
+/* =====================================================================
+   8. Data loading
+   ===================================================================== */
+function stamp(){
+  var np = nowParts();
+  return pad2(np.h) + ":" + pad2(np.mi);
+}
+function fetchCsv(url){
+  return fetch(url, { cache:"no-store", credentials:"omit" }).then(function(res){
+    if(!res.ok) throw new Error("HTTP " + res.status);
+    return res.text();
+  }).then(function(text){
+    if(/^\s*<(!doctype|html)/i.test(text)) throw new Error("not csv");
+    return text;
+  });
+}
+function bust(url){
+  return url + (url.indexOf("?") === -1 ? "?" : "&") + "cb=" + Date.now();
+}
+function load(){
+  var chain;
+  if(csvOverride){
+    chain = fetchCsv(csvOverride);
+  } else {
+    chain = fetchCsv(bust(URL_PRIMARY)).catch(function(){ return fetchCsv(bust(URL_FALLBACK)); });
+  }
+  return chain.then(function(text){
+    var rows = toRows(text);
+    if(!rows.length) throw new Error("no header row found");
+    state.rows = rows;
+    state.updated = stamp();
+    state.offline = false;
+    store(LS_CSV + state.sourceKey, JSON.stringify({ csv:text, at:state.updated }));
+    render();
+  }).catch(function(err){
+    if(window.console && console.warn) console.warn("Plan fetch failed:", err && err.message);
+    state.offline = true;
+    /* nothing cached either - fall through to the friendly empty state, never a blank page */
+    if(state.rows === null) state.rows = [];
+    render();
+  });
+}
+function loadCache(){
+  var raw = store(LS_CSV + state.sourceKey);
+  if(!raw) return;
+  try{
+    var obj = JSON.parse(raw);
+    var rows = toRows(obj.csv || "");
+    if(rows.length){ state.rows = rows; state.updated = obj.at || ""; }
+  }catch(e){ /* corrupt cache - ignore */ }
+}
+
+/* =====================================================================
+   9. Sky decoration
+   ===================================================================== */
+function seeded(seed){
+  return function(){ seed = (seed * 1103515245 + 12345) & 0x7fffffff; return seed / 0x7fffffff; };
+}
+function buildSky(){
+  var rnd = seeded(20260820), html = [], i, x, y, s, o;
+  for(i = 0; i < 130; i++){
+    x = (rnd() * 100).toFixed(2);
+    y = (rnd() * 99).toFixed(2);
+    s = (rnd() * 1.9 + 0.9).toFixed(2);
+    o = (0.35 + rnd() * 0.55).toFixed(2);
+    html.push('<i class="star" style="left:' + x + '%;top:' + y + '%;width:' + s + 'px;height:' + s +
+      'px;--o:' + o + ';opacity:' + o + ';--d:' + (3.5 + rnd() * 6).toFixed(1) +
+      's;--delay:' + (rnd() * 7).toFixed(1) + 's"></i>');
+  }
+  var spark = [[12,9,15],[78,17,11],[31,31,9],[88,47,13],[19,58,10],[62,69,9],[44,84,12]];
+  for(i = 0; i < spark.length; i++){
+    var sp = spark[i];
+    html.push('<svg class="sparkle" viewBox="0 0 24 24" width="' + sp[2] + '" height="' + sp[2] +
+      '" style="left:' + sp[0] + '%;top:' + sp[1] + '%;--d:' + (5 + i) + 's;--delay:' + (i * 0.9) +
+      's" aria-hidden="true"><path d="M12 0c.7 6.4 4.9 10.6 12 12-7.1 1.4-11.3 5.6-12 12-.7-6.4-4.9-10.6-12-12C7.1 10.6 11.3 6.4 12 0z" fill="currentColor"/></svg>');
+  }
+  var birds = [
+    [ 4, 72, 34, "#F6C9B4", .30, 112,  0],
+    [26, 88, 26, "#C8D8F3", .26, 138,  9],
+    [58, 64, 40, "#D9C9F0", .24,  96, 22],
+    [72, 92, 22, "#F3B8C4", .28, 124, 40],
+    [15, 40, 28, "#C7E6D3", .22, 150, 60],
+    [46, 24, 20, "#F8DFA3", .20, 132, 15],
+    [86, 34, 30, "#EFE6D8", .18, 118, 75]
+  ];
+  for(i = 0; i < birds.length; i++){
+    var b = birds[i];
+    html.push('<svg class="bird" viewBox="0 0 60 30" width="' + b[2] + '" height="' + (b[2]/2) +
+      '" style="left:' + b[0] + '%;top:' + b[1] + '%;color:' + b[3] + ';opacity:' + b[4] +
+      ';--d:' + b[5] + 's;--delay:-' + b[6] + 's" aria-hidden="true">' +
+      '<path d="M2 20c9 1 16-2 21-9 1.5-2 3.5-2 4.5 0 4 7 12 10 21 9-8 4-15 5-21 3-1.6-.5-3.4-.5-5 0-6 2-13 1-20.5-3z" fill="currentColor"/>' +
+      '</svg>');
+  }
+  $("skylayer").innerHTML = html.join("");
+}
+
+/* =====================================================================
+   10. Wiring
+   ===================================================================== */
+$("langpill").addEventListener("click", function(ev){
+  var b = ev.target.closest ? ev.target.closest("button[data-lang]") : null;
+  if(!b) return;
+  state.lang = b.getAttribute("data-lang");
+  store(LS_LANG, state.lang);
+  render();
+});
+document.addEventListener("visibilitychange", function(){
+  if(document.visibilityState === "visible") load();
+});
+window.addEventListener("online", load);
+
+/* ?debug=1 exposes the pure helpers so they can be unit tested from a harness */
+if(params.get("debug") === "1"){
+  window.FCdebug = { parseCSV:parseCSV, parseDate:parseDate, toRows:toRows,
+                     serviceDayKey:serviceDayKey, serviceMinutes:serviceMinutes,
+                     parseClock:parseClock, istanbulParts:istanbulParts,
+                     nowParts:nowParts, dateLine:dateLine };
+}
+
+buildSky();
+loadCache();
+render();
+load();
+setInterval(load, REFRESH_MS);
+/* keep the past/next marks honest even if nobody refreshes */
+setInterval(function(){ if(state.rows) render(); }, 30000);
+
+})();
+</script>
+</body>
+</html>
